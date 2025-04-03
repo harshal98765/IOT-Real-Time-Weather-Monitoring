@@ -87,7 +87,7 @@ export default function Navbar() {
   )
 }
 
-function NavLink({ href, text, isActive = false }) {
+function NavLink({ href, text, isActive = false }: { href: string; text: string; isActive?: boolean }) {
   return (
     <a
       href={href}
@@ -100,7 +100,7 @@ function NavLink({ href, text, isActive = false }) {
   )
 }
 
-function MobileNavLink({ href, text, isActive = false }) {
+function MobileNavLink({ href, text, isActive = false }: { href: string; text: string; isActive?: boolean }) {
   return (
     <a
       href={href}
